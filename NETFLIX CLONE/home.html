@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse a Netflix-style movie and series showcase.">
+    <title>Netflix — Browse</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="browse-nav">
+        <a class="brand" href="home.html" aria-label="Netflix home">NETFLIX</a>
+        <nav class="browse-links" aria-label="Main navigation">
+            <a class="active" href="#home">Home</a><a href="#series">TV Shows</a><a href="#movies">Movies</a><a href="#trending">New & Popular</a><a href="#my-list">My List</a>
+        </nav>
+        <div class="browse-tools"><a href="#search" aria-label="Search">⌕</a><span class="kids-label">KIDS</span><a href="#my-list" aria-label="My list">♡</a><a class="profile" href="#profile" aria-label="Profile">C</a></div>
+    </header>
+
+    <main id="home">
+        <section class="billboard">
+            <div class="billboard-bg"></div>
+            <div class="billboard-content">
+                <p class="eyebrow"><span class="N-mark">N</span> SERIES SPOTLIGHT</p>
+                <h1>THE <span>LAST</span><br>HORIZON</h1>
+                <div class="billboard-meta"><span class="top-ten">TOP 10</span><span>#1 in TV Shows Today</span></div>
+                <p class="billboard-description">When the world goes quiet, one crew must cross an unknown frontier to uncover the truth. A thrilling adventure begins where the map ends.</p>
+                <div class="billboard-buttons">
+                    <a class="play-button" href="#trending"><span>▶</span> Play</a>
+                    <a class="info-button" href="#featured"><span>ⓘ</span> More Info</a>
+                </div>
+            </div>
+            <div class="age-rating">16+</div>
+        </section>
+
+        <div class="browse-content">
+            <section class="movie-section" id="trending">
+                <h2>Trending Now</h2>
+                <div class="movie-row trending-row">
+                    <a class="movie-card trend-money" href="#details-1" aria-label="Money Heist details"><span class="rank">1</span><span class="poster-title">MONEY<br>HEIST</span><span class="card-label">TOP 10</span></a>
+                    <a class="movie-card trend-stranger" href="#details-2" aria-label="Stranger Things details"><span class="rank">2</span><span class="poster-title">STRANGER<br>THINGS</span></a>
+                    <a class="movie-card trend-lupin" href="#details-3" aria-label="Lupin details"><span class="rank">3</span><span class="poster-title">LUPIN</span></a>
+                    <a class="movie-card trend-wednesday" href="#details-4" aria-label="Wednesday details"><span class="rank">4</span><span class="poster-title">WEDNESDAY</span></a>
+                    <a class="movie-card trend-squid" href="#details-5" aria-label="Squid Game details"><span class="rank">5</span><span class="poster-title">SQUID<br>GAME</span></a>
+                    <a class="movie-card trend-dhamal" href="#details-6" aria-label="Dhamaal 4 sample details"><span class="rank">6</span><span class="poster-title">DHAMAAL 4</span></a>
+                </div>
+            </section>
+
+            <section class="movie-section" id="my-list">
+                <h2>Continue Watching</h2>
+                <div class="movie-row wide-row">
+                    <a class="wide-card wide-1" href="#details-7"><span class="continue-play">▶</span><span class="wide-info"><strong>Midnight Run</strong><small>Season 1 · Episode 4</small><span class="progress"><i style="width:62%"></i></span></span></a>
+                    <a class="wide-card wide-2" href="#details-8"><span class="continue-play">▶</span><span class="wide-info"><strong>Beyond Earth</strong><small>Season 2 · Episode 1</small><span class="progress"><i style="width:28%"></i></span></span></a>
+                    <a class="wide-card wide-3" href="#details-9"><span class="continue-play">▶</span><span class="wide-info"><strong>The Last Game</strong><small>Season 1 · Episode 7</small><span class="progress"><i style="width:81%"></i></span></span></a>
+                </div>
+            </section>
+
+            <section class="movie-section" id="movies">
+                <h2>Popular on Netflix</h2>
+                <div class="movie-row">
+                    <a class="image-card img-1" href="#details-10"><span class="image-card-title">THE<br>OUTPOST</span><span class="hover-info"><b>▶</b>　♡　＋<small>Action · 2026</small></span></a>
+                    <a class="image-card img-2" href="#details-11"><span class="image-card-title">BLUE<br>PLANET</span><span class="hover-info"><b>▶</b>　♡　＋<small>Documentary · 2025</small></span></a>
+                    <a class="image-card img-3" href="#details-12"><span class="image-card-title">BROKEN<br>CODE</span><span class="hover-info"><b>▶</b>　♡　＋<small>Thriller · 2026</small></span></a>
+                    <a class="image-card img-4" href="#details-13"><span class="image-card-title">LOVE<br>AGAIN</span><span class="hover-info"><b>▶</b>　♡　＋<small>Romance · 2025</small></span></a>
+                    <a class="image-card img-5" href="#details-14"><span class="image-card-title">DARK<br>MATTER</span><span class="hover-info"><b>▶</b>　♡　＋<small>Sci-Fi · 2026</small></span></a>
+                    <a class="image-card img-6" href="#details-15"><span class="image-card-title">THE<br>HEIST</span><span class="hover-info"><b>▶</b>　♡　＋<small>Crime · 2025</small></span></a>
+                </div>
+            </section>
+
+            <section class="movie-section" id="series">
+                <h2>Indian Movies & Series</h2>
+                <div class="movie-row">
+                    <a class="image-card india-1" href="#details-16"><span class="image-card-title">DELHI<br>FILES</span><span class="hover-info"><b>▶</b>　♡　＋<small>Crime Drama · Hindi</small></span></a>
+                    <a class="image-card india-2" href="#details-17"><span class="image-card-title">MAHARAJA</span><span class="hover-info"><b>▶</b>　♡　＋<small>Drama · Hindi</small></span></a>
+                    <a class="image-card india-3" href="#details-18"><span class="image-card-title">THE<br>WARRIOR</span><span class="hover-info"><b>▶</b>　♡　＋<small>Action · Telugu</small></span></a>
+                    <a class="image-card india-4" href="#details-19"><span class="image-card-title">MONSOON</span><span class="hover-info"><b>▶</b>　♡　＋<small>Romance · Hindi</small></span></a>
+                    <a class="image-card india-5" href="#details-20"><span class="image-card-title">RISING<br>STAR</span><span class="hover-info"><b>▶</b>　♡　＋<small>Sports · Hindi</small></span></a>
+                    <a class="image-card india-6" href="#details-21"><span class="image-card-title">THE<br>VILLAGE</span><span class="hover-info"><b>▶</b>　♡　＋<small>Mystery · Tamil</small></span></a>
+                </div>
+            </section>
+
+            <section class="movie-section" id="featured">
+                <h2>Action & Adventure</h2>
+                <div class="movie-row">
+                    <a class="image-card action-1" href="#details-22"><span class="image-card-title">LAST<br>MISSION</span><span class="hover-info"><b>▶</b>　♡　＋<small>Action · 2026</small></span></a>
+                    <a class="image-card action-2" href="#details-23"><span class="image-card-title">STORM<br>CHASERS</span><span class="hover-info"><b>▶</b>　♡　＋<small>Adventure · 2025</small></span></a>
+                    <a class="image-card action-3" href="#details-24"><span class="image-card-title">NO<br>ESCAPE</span><span class="hover-info"><b>▶</b>　♡　＋<small>Thriller · 2026</small></span></a>
+                    <a class="image-card action-4" href="#details-25"><span class="image-card-title">IRON<br>CLAD</span><span class="hover-info"><b>▶</b>　♡　＋<small>Action · 2025</small></span></a>
+                    <a class="image-card action-5" href="#details-26"><span class="image-card-title">WANTED</span><span class="hover-info"><b>▶</b>　♡　＋<small>Crime · 2026</small></span></a>
+                    <a class="image-card action-6" href="#details-27"><span class="image-card-title">EDGE OF<br>FIRE</span><span class="hover-info"><b>▶</b>　♡　＋<small>Adventure · 2025</small></span></a>
+                </div>
+            </section>
+
+            <section class="movie-section">
+                <h2>Popular Series</h2>
+                <div class="movie-row">
+                    <a class="image-card anime-1" href="#details-28"><span class="image-card-title">SKY<br>LEGENDS</span><span class="hover-info"><b>▶</b>　♡　＋<small>Anime · Fantasy</small></span></a>
+                    <a class="image-card anime-2" href="#details-29"><span class="image-card-title">NEON<br>FUTURE</span><span class="hover-info"><b>▶</b>　♡　＋<small>Anime · Sci-Fi</small></span></a>
+                    <a class="image-card anime-3" href="#details-30"><span class="image-card-title">SPIRIT<br>WORLD</span><span class="hover-info"><b>▶</b>　♡　＋<small>Animation · Family</small></span></a>
+                    <a class="image-card anime-4" href="#details-31"><span class="image-card-title">MOON<br>GUARD</span><span class="hover-info"><b>▶</b>　♡　＋<small>Anime · Action</small></span></a>
+                    <a class="image-card anime-5" href="#details-32"><span class="image-card-title">PIXEL<br>QUEST</span><span class="hover-info"><b>▶</b>　♡　＋<small>Animation · Comedy</small></span></a>
+                    <a class="image-card anime-6" href="#details-33"><span class="image-card-title">DRAGON<br>HEART</span><span class="hover-info"><b>▶</b>　♡　＋<small>Anime · Adventure</small></span></a>
+                </div>
+            </section>
+
+            <section class="details-library" aria-label="Movie details">
+                <h2>Discover more</h2>
+                <p class="details-note">Select any title below to reveal its sample description. Movie names and descriptions are fictional demo content.</p>
+                <details id="details-1"><summary>Money Heist <span>＋</span></summary><p>A globe-trotting action comedy about an unlikely team chasing a legendary prize. <b>Genre:</b> Action · <b>Rating:</b> 8.1/10</p></details>
+                <details id="details-2"><summary>Stranger Things <span>＋</span></summary><p>A crew discovers something extraordinary beneath the ocean floor. <b>Genre:</b> Mystery · <b>Rating:</b> 7.8/10</p></details>
+                <details id="details-3"><summary>Lupin <span>＋</span></summary><p>An undercover analyst races to stop a secret network before sunrise. <b>Genre:</b> Thriller · <b>Rating:</b> 8.4/10</p></details>
+                <details id="details-4"><summary>Wednesday <span>＋</span></summary><p>Three strangers follow their ambitions through a city that never sleeps. <b>Genre:</b> Drama · <b>Rating:</b> 7.9/10</p></details>
+                <details id="details-5"><summary>Squid Game <span>＋</span></summary><p>A courier's final delivery pulls him into a dangerous conspiracy. <b>Genre:</b> Crime · <b>Rating:</b> 8.0/10</p></details>
+                <details id="details-6"><summary>Dhamaal 4 (sample listing) <span>＋</span></summary><p>Explorers cross a remote wilderness in search of a lost settlement. <b>Genre:</b> Adventure · <b>Rating:</b> 7.7/10</p></details>
+                <details id="details-7"><summary>Midnight Run <span>＋</span></summary><p>A night-shift driver becomes the only witness to a city-wide mystery. <b>Genre:</b> Mystery · <b>Rating:</b> 8.2/10</p></details>
+                <details id="details-8"><summary>Beyond Earth <span>＋</span></summary><p>A small research team searches for a habitable world beyond our solar system. <b>Genre:</b> Sci-Fi · <b>Rating:</b> 8.5/10</p></details>
+                <details id="details-9"><summary>The Last Game <span>＋</span></summary><p>A young athlete gets one last chance to prove himself on the biggest stage. <b>Genre:</b> Sports · <b>Rating:</b> 8.3/10</p></details>
+                <details id="details-10"><summary>The Outpost <span>＋</span></summary><p>A team must defend an isolated outpost against impossible odds. <b>Genre:</b> Action · <b>Rating:</b> 7.6/10</p></details>
+                <details id="details-11"><summary>Blue Planet <span>＋</span></summary><p>A visually rich journey through Earth's most remarkable marine habitats. <b>Genre:</b> Documentary · <b>Rating:</b> 9.0/10</p></details>
+                <details id="details-12"><summary>Broken Code <span>＋</span></summary><p>A software engineer uncovers a pattern hidden inside a mysterious data breach. <b>Genre:</b> Thriller · <b>Rating:</b> 8.0/10</p></details>
+                <details id="details-13"><summary>Love Again <span>＋</span></summary><p>Two old friends meet again and rethink what they really want from life. <b>Genre:</b> Romance · <b>Rating:</b> 7.4/10</p></details>
+                <details id="details-14"><summary>Dark Matter <span>＋</span></summary><p>A scientist's experiment reveals a reality that should not exist. <b>Genre:</b> Sci-Fi · <b>Rating:</b> 8.6/10</p></details>
+                <details id="details-15"><summary>The Heist <span>＋</span></summary><p>A meticulous crew plans a daring robbery with a hidden twist. <b>Genre:</b> Crime · <b>Rating:</b> 8.1/10</p></details>
+            </section>
+        </div>
+    </main>
+
+    <footer class="browse-footer">
+        <div class="socials"><a href="#home">f</a><a href="#home">◎</a><a href="#home">▶</a><a href="#home">𝕏</a></div>
+        <div class="browse-footer-links"><a href="#home">Audio Description</a><a href="#home">Help Centre</a><a href="#home">Gift Cards</a><a href="#home">Media Centre</a><a href="#home">Investor Relations</a><a href="#home">Jobs</a><a href="#home">Terms of Use</a><a href="#home">Privacy</a><a href="#home">Legal Notices</a><a href="#home">Cookie Preferences</a></div>
+        <button class="service-code" type="button">Service Code</button>
+        <p>© 1997–2026 Netflix-style college project</p>
+        <a class="back-top" href="#top">Back to top ↑</a>
+    </footer>
+</body>
+</html>
